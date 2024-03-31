@@ -1,6 +1,7 @@
 import unittest
 from graphs.number_of_islands import Solution
 
+
 class TestNumberOfIslands(unittest.TestCase):
     def setUp(self):
         self.solution = Solution()
@@ -14,7 +15,7 @@ class TestNumberOfIslands(unittest.TestCase):
             ["1", "1", "1", "1", "0"],
             ["1", "1", "0", "1", "0"],
             ["1", "1", "0", "0", "0"],
-            ["0", "0", "0", "0", "0"]
+            ["0", "0", "0", "0", "0"],
         ]
         self.assertEqual(self.solution.numIslands(grid), 1)
 
@@ -23,7 +24,7 @@ class TestNumberOfIslands(unittest.TestCase):
             ["1", "1", "0", "0", "0"],
             ["1", "1", "0", "0", "0"],
             ["0", "0", "1", "0", "0"],
-            ["0", "0", "0", "1", "1"]
+            ["0", "0", "0", "1", "1"],
         ]
         self.assertEqual(self.solution.numIslands(grid), 3)
 
@@ -32,9 +33,10 @@ class TestNumberOfIslands(unittest.TestCase):
             ["0", "0", "0", "0", "0"],
             ["0", "0", "0", "0", "0"],
             ["0", "0", "0", "0", "0"],
-            ["0", "0", "0", "0", "0"]
+            ["0", "0", "0", "0", "0"],
         ]
         self.assertEqual(self.solution.numIslands(grid), 0)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

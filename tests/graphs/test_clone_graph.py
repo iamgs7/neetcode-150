@@ -1,6 +1,7 @@
 import unittest
 from graphs.clone_graph import Solution, Node
 
+
 class TestCloneGraph(unittest.TestCase):
 
     def test_clone_empty_graph(self):
@@ -62,5 +63,6 @@ class TestCloneGraph(unittest.TestCase):
         self.assertEqual(len(cloned_node.neighbors[0].neighbors[1].neighbors), 1)
         self.assertEqual(cloned_node.neighbors[0].neighbors[1].neighbors[0].val, 50)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()
