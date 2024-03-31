@@ -1,0 +1,18 @@
+name: Lint Check
+
+on:
+  push:
+    branches:
+      - main
+      - release/*
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lintjob:
+    name: Python Linter
+    runs-on: ubuntu-latest
+    steps:
+       - name: Python Linter
+         uses: jiwidi/python-lint-action@main
